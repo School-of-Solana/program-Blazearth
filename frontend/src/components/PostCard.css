@@ -1,0 +1,137 @@
+.post-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  margin-bottom: 24px;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.post-owner-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.post-owner-name {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--text-primary);
+}
+
+.post-owner-address {
+  font-size: 11px;
+  color: var(--text-secondary);
+  font-family: 'Courier New', monospace;
+}
+
+.post-date {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.post-image {
+  width: 100%;
+  background: var(--image-bg);
+  max-height: 600px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.post-image img {
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+  object-fit: contain;
+  display: block;
+}
+
+.image-placeholder {
+  padding: 60px 20px;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 14px;
+  background: var(--placeholder-bg);
+  width: 100%;
+}
+
+.image-placeholder p {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.image-placeholder small {
+  font-size: 12px;
+  color: var(--text-secondary);
+  word-break: break-all;
+  opacity: 0.7;
+}
+
+.post-actions {
+  display: flex;
+  gap: 16px;
+  padding: 8px 16px;
+  border-top: 1px solid var(--border-light);
+  align-items: center;
+}
+
+.like-button,
+.comment-button,
+.delete-button {
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: opacity 0.2s;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.like-button:hover:not(:disabled),
+.comment-button:hover,
+.delete-button:hover:not(:disabled) {
+  opacity: 0.6;
+}
+
+.like-button:disabled,
+.delete-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.3;
+}
+
+.delete-button {
+  margin-left: auto;
+  color: #ed4956;
+  font-size: 20px;
+  padding: 4px 8px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .post-card {
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+
+  .post-image {
+    max-height: 500px;
+  }
+}

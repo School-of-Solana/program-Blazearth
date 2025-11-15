@@ -1,0 +1,27 @@
+.wallet-connect-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.wallet-connect-container button {
+  padding: 8px 16px;
+  background: transparent;
+  color: #262626;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.wallet-connect-container button:hover {
+  background: #fafafa;
+}
+
+.wallet-address {
+  font-size: 13px;
+  color: #8e8e8e;
+  font-family: 'Courier New', monospace;
+}
