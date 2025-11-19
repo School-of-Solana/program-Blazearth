@@ -1,6 +1,6 @@
 # Project Description
 
-**Deployed Frontend URL:** [TODO: Add your Vercel deployment URL]
+**Deployed Frontend URL:** https://defi-insta.vercel.app/
 
 **Solana Program ID:** 6t5PjEe4SW7JbtHxbttwZ9gyGGmLhahA9r2v2E3iPTsZ
 
